@@ -50,7 +50,7 @@ public class EmployeeController {
     }
   
     @PostMapping(path = "/newemployee" ,consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE )
-    public ResponseEntity<Employee> newEmployee(@Validated @RequestBody Employee emp) {
+    public ResponseEntity<Employee> newEmployee(@RequestBody Employee emp) {
     	return new ResponseEntity<>(employeeService.save(emp), HttpStatus.CREATED);
     }   
    
