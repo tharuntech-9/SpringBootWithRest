@@ -30,5 +30,5 @@ public class Employeedto {
 	private int empId;
 	private String employeeName;
 	private String emailID;
-		
+	private String department;	
 }

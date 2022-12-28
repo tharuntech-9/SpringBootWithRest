@@ -36,5 +36,9 @@ public class Employee {
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "dep_code")
 	private Department department;
+	
+//	public Employee(Employeedto employeedto) {
+//		this.employeeName=employeedto.getEmployeeName();
+//	}
 
 }
